@@ -95,7 +95,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "include": [
+              "src/**/*.spec.ts"
+            ]
           }
         }
       }
