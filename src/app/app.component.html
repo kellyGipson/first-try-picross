@@ -1,2 +1,15 @@
-<menu></menu>
-<picross></picross>
+<ng-container *ngIf="stack | isDefined">
+  <picross-menu
+    *ngIf="stack?.peek() | isEqual: stackEnum.MainMenu"
+    (menuSelected)="onMenuSelected($event)"
+  ></picross-menu>
+  <level-select
+    *ngIf="stack?.peek() | isEqual: stackEnum.LevelSelect"
+    (back)="onBack()"
+  ></level-select>
+  <settings
+    *ngIf="stack?.peek() | isEqual: stackEnum.Settings"
+    (back)="onBack()"
+  ></settings>
+  <picross *ngIf="stack?.peek() | isEqual: stackEnum.Picross"></picross>
+</ng-container>

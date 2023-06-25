@@ -2,6 +2,6 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: 'picross',
-  template: ``
+  template: `Picross component`
 })
 export class PicrossComponent {}
