@@ -1,8 +1,7 @@
 import { O, X } from "../config-constants";
 import { PicrossConfigMapFactory } from "./config-map.factory";
-import { PicrossConfigMap } from "./config-map.model";
 
-fdescribe('Given PicrossConfigMap', () => {
+describe('Given PicrossConfigMap', () => {
   describe('And getRow', () => {
     it(`And a 3x3 tile map is provided
         Then it should return the row asked for`, () => {
